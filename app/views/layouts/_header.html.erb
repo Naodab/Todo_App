@@ -1,0 +1,15 @@
+<div class="container nav-container">
+  <div class="navbar">
+    <div class="logo-container">
+      <%= render "layouts/logo" %>
+    </div>
+    <ul class="options-container">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", about_static_pages_path %></li>
+    </ul>
+    <ul class="authentication-container">
+      <li><%= link_to "Sign In", "#" %></li>
+      <li><%= link_to "Get Started", "#", class: "btn btn--primary" %></li>
+    </ul>
+  </div>
+</div>
