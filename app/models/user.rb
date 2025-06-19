@@ -17,9 +17,9 @@ class User < ApplicationRecord
   validates :password,
             length: { minimum: 6 },
             if: -> { provider == "local" }
-  validates :provider,
-            presence: true,
-            inclusion: { in: PROVIDER }
+  # validates :provider,
+  #           presence: true,
+  #           inclusion: { in: PROVIDER }
 
   private
 
